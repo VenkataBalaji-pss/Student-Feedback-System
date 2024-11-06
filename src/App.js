@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import FeedbackForm from './Components/FeedbackForm';
+import FeedbackListByCourse from './Components/FeedbackListByCourse'; // Import the new component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <center>
+          <h1>Student Feedback System</h1>
+          <Link to="/feedback">
+            <button>Go to Feedback Form</button>
+          </Link>
+          <Link to="/feedbacks">
+            <button>View Feedback for CS101</button> 
+          </Link>
+        </center>
+        <Routes>
+          <Route path="/feedback" element={<FeedbackForm />} />
+          <Route path="/feedbacks" element={<FeedbackListByCourse />} /> 
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
