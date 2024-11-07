@@ -1,90 +1,78 @@
-/* Overall Form Background with Soft Gradient */
 .feedback-form-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, #d1c4e9, #f3e5f5); 
+    background: linear-gradient(135deg, #d1c4e9, #f3e5f5);  /* Soft gradient background */
     color: #333; /* Dark text for readability */
     font-family: 'Poppins', sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Title Styling */
-  .feedback-form-container h2 {
+}
+
+.feedback-form-container h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #4a148c; /* Deep purple for title to stand out */
+    color: #4a148c;
     font-size: 28px;
-  }
-  
-  /* Style for the input and textarea fields */
-  .feedback-form-container input,
-  .feedback-form-container textarea {
+}
+
+.feedback-form-container input,
+.feedback-form-container textarea {
     width: 100%;
     padding: 12px;
     margin: 12px 0;
     border-radius: 8px;
-    border: 1px solid #d1c4e9; /* Lighter border to match the gradient */
+    border: 1px solid #d1c4e9;
     font-size: 16px;
-    background-color: #ffffff; /* White background for inputs */
-    color: #333; /* Dark text for better readability */
+    background-color: #ffffff;
+    color: #333;
     transition: all 0.3s ease-in-out;
-  }
-  
-  /* On focus, change border color and input field background */
-  .feedback-form-container input:focus,
-  .feedback-form-container textarea:focus {
+}
+
+.feedback-form-container input:focus,
+.feedback-form-container textarea:focus {
     outline: none;
-    border-color: #4a148c; /* Deep purple */
-    background-color: #f1f8ff; /* Light blue background on focus */
-  }
-  
-  /* Style for the submit button */
-  .feedback-form-container button {
+    border-color: #4a148c;
+    background-color: #f1f8ff;
+}
+
+.feedback-form-container button {
     padding: 12px 20px;
     border-radius: 8px;
     border: none;
-    background-color: #4a148c; /* Deep purple */
-    color: white;
+    background-color: #4a148c;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Button hover effect */
-  .feedback-form-container button:hover {
-    background-color: #7b1fa2; /* Lighter purple shade on hover */
-  }
-  
-  /* Style for each form group */
-  .feedback-form-container .form-group {
+}
+
+.feedback-form-container button:hover {
+    background-color: #7b1fa2;
+}
+
+.feedback-form-container .form-group {
     margin-bottom: 20px;
-  }
-  
-  /* Responsive Design: Ensure the form works on smaller screens */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .feedback-form-container {
-      padding: 20px;
-      margin: 20px;
+        padding: 20px;
+        margin: 20px;
     }
-    
     .feedback-form-container h2 {
-      font-size: 24px;
+        font-size: 24px;
     }
-    
     .feedback-form-container input,
     .feedback-form-container textarea {
-      padding: 10px;
-      font-size: 14px;
+        padding: 10px;
+        font-size: 14px;
     }
-    
     .feedback-form-container button {
-      font-size: 14px;
-      padding: 10px 15px;
+        font-size: 14px;
+        padding: 10px 15px;
     }
-  }
-  
+}

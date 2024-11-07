@@ -103,7 +103,7 @@ function FeedbackForm() {
             rows="4"
           />
         </div>
-        <button type="submit">Submit Feedback</button>
+        <button type="submit"><b>Submit Feedback</b></button>
       </form>
     </div>
   );

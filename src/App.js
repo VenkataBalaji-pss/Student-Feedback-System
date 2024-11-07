@@ -1,33 +1,48 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import FeedbackForm from './Components/FeedbackForm';
-import FeedbackListByCourse from './Components/FeedbackListByCourse'; // For viewing feedback by specific course (e.g., CS101)
-import FeedbackList from './Components/FeedbackList'; // Import the new component to view all feedback
+import FeedbackListByCourse from './Components/FeedbackListByCourse';
+import FeedbackList from './Components/FeedbackList';
+import CoursesList from './Components/CoursesList';
+import DeleteFeedback from './Components/DeleteFeedback';  // Import DeleteFeedback
+import './App.css';  // Importing the CSS file
 
-import './App.css'
 function App() {
   return (
-    <Router>
-      <div className="App" >
-        <center style={{backgroundColor:'lightgoldenrodyellow',marginBottom:'20px'}}>
-          <h1 className="scrolling-text" >Student Feedback System</h1>
-          </center>
-      
+    <Router>  {/* Wrap your entire app with BrowserRouter */}
+      <div className="App">
+        {/* Header section with background */}
+        <center className="center-header">
+          <h1 className="scrolling-text">Student Feedback System</h1>
+        </center>
+
+        {/* Navigation buttons */}
+        <div className="button-container">
           <Link to="/feedback">
-            <button style={{fontSize: 15,backgroundColor: 'whitesmoke', marginRight: '15px',border: '2px solid #007bff', borderRadius: '8px', padding: '10px 20px',marginLeft:'370px'}} >Go to Feedback Form</button>
+            <button className="feedback-button">Go to Feedback Form</button>
           </Link>
           <Link to="/feedbacks">
-            <button style={{fontSize: 15,backgroundColor: 'whitesmoke', marginRight: '15px',border: '2px solid #007bff', borderRadius: '8px', padding: '10px 20px'}}>View All Feedback</button> 
+            <button className="feedback-button">View All Feedback</button>
           </Link>
           <Link to="/feedbacks/course/CS101">
-            <button style={{fontSize: 15,backgroundColor: 'whitesmoke',border: '2px solid #007bff', borderRadius: '8px', padding: '10px 20px'}}>View Feedback for CS101</button> 
+            <button className="feedback-button">View Feedback</button>
           </Link>
-       
+          <Link to="/courses">
+            <button className="feedback-button">View All Courses</button>  {/* New button */}
+          </Link>
+          <Link to="/delete-feedback">
+            <button className="feedback-button">Delete Feedback</button>  {/* Button to delete feedback */}
+          </Link>
+        </div>
 
+        {/* Routes for components */}
         <Routes>
-          <Route path="/feedback" element={<FeedbackForm />} />  
-          <Route path="/feedbacks" element={<FeedbackList />} />  
-          <Route path="/feedbacks/course/:courseId" element={<FeedbackListByCourse />} />  
+          <Route path="/feedback" element={<FeedbackForm />} />
+          <Route path="/feedbacks" element={<FeedbackList />} />
+          <Route path="/feedbacks/course/:courseId" element={<FeedbackListByCourse />} />
+          <Route path="/courses" element={<CoursesList />} />
+          <Route path="/delete-feedback" element={<DeleteFeedback />} />  {/* Route for delete */}
         </Routes>
       </div>
     </Router>
