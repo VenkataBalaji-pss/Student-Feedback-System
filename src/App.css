@@ -1,47 +1,14 @@
-/* Container for the feedback form */
-.feedback-form-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
 }
 
-/* Title Styling */
-.feedback-form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'Arial', sans-serif;
-}
-
-/* Style for the input and textarea fields */
-.feedback-form-container input,
-.feedback-form-container textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-/* Style for the submit button */
-.feedback-form-container button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* Style for each form group */
-.feedback-form-container .form-group {
-  margin-bottom: 15px;
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../App.css';
+import './FeedbackForm.css';
 
 function FeedbackForm() {
   const [feedback, setFeedback] = useState({
@@ -36,7 +36,7 @@ function FeedbackForm() {
       <h2>Submit Your Feedback</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name"><b>Name:</b></label>
           <input
             type="text"
             id="name"
@@ -47,7 +47,7 @@ function FeedbackForm() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="feedbackText">Feedback:</label>
+          <label htmlFor="feedbackText"><b>Feedback:</b></label>
           <textarea
             id="feedbackText"
             name="feedbackText"
@@ -58,7 +58,7 @@ function FeedbackForm() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="courseId">Course ID:</label>
+          <label htmlFor="courseId"><b>Course ID:</b></label>
           <input
             type="text"
             id="courseId"
@@ -69,7 +69,7 @@ function FeedbackForm() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="instructorId">Instructor ID:</label>
+          <label htmlFor="instructorId"><b>Instructor ID:</b></label>
           <input
             type="text"
             id="instructorId"
@@ -80,7 +80,7 @@ function FeedbackForm() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="rating">Rating (1 to 5):</label>
+          <label htmlFor="rating"><b>Rating (1 to 5):</b></label>
           <input
             type="number"
             id="rating"
@@ -93,7 +93,7 @@ function FeedbackForm() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="comments">Comments:</label>
+          <label htmlFor="comments"><b>Comments:</b></label>
           <textarea
             id="comments"
             name="comments"
