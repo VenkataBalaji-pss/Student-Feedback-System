@@ -1,0 +1,344 @@
+/* Global background for the entire body */
+body {
+  background-color: #f0f0f0;  /* Fallback color */
+  height: 100vh;               /* Full height of the viewport */
+  margin: 0;                   /* Removes default margin */
+  display: flex;
+  flex-direction: column;
+  background-image: url('./Images/college.jpg');
+  background-size: cover;      /* Ensure the background covers the entire body */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Prevent repeating the background */
+  background-attachment: fixed; /* Make the background image sticky */
+}
+
+/* Centered header section */
+/* Centered header section */
+.center-header {
+  height: 120px;                           /* Adjust header height */
+  color: black;                            /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+  margin-top: 10px;
+  border-radius: 10px;        /* Optional rounded corners */
+  background: none;           /* Remove background color */
+}
+
+
+/* Scrolling text animation */
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+/* Define the keyframes to move the text from right to left and left to right */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start the text off-screen on the right */
+  }
+  50% {
+    transform: translateX(-100%); /* Move the text completely off-screen to the left */
+  }
+  100% {
+    transform: translateX(100%); /* Move the text back to the right */
+  }
+}
+
+
+
+/* Styling for all buttons in the app */
+.App button {
+  font-size: 15px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+/* Styling for individual feedback buttons */
+.feedback-button {
+  font-size: 15px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+  background-color: #007bff; /* Hover effect */
+  color: white; /* Text color change */
+}
+
+/* Button container styling for alignment */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Input and Button Container for feedback input */
+.feedback-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for feedback input field */
+.feedback-input-container input {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  margin-right: 10px;
+  width: 250px;  /* Adjust input width */
+  transition: border-color 0.3s ease;
+}
+
+.feedback-input-container input:focus {
+  border-color: #0056b3;  /* Border color on focus */
+  outline: none;
+}
+
+/* Button styling for feedback input */
+.feedback-input-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-input-container button:hover {
+  background-color: #0056b3; /* Hover effect */
+}
+
+.feedback-input-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Loading and error messages */
+.loading, .error {
+  text-align: center;
+  font-size: 1.5em;
+  color: red;
+  margin-top: 20px;
+}
+
+/* Styling for courses list */
+.courses-list-container {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Styling for the list of courses */
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-header {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.course-details {
+  margin-top: 5px;
+}
+
+/* Styling for the feedback list container */
+.feedback-list-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the Feedback List */
+.feedback-list-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Feedback List Styling */
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Individual Feedback Item Styling */
+.feedback-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for each feedback item */
+.feedback-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Instructor ID Styling */
+.feedback-instructor {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Comment Section Styling */
+.feedback-comment {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.feedback-comment strong {
+  color: #333;
+}
+
+/* Rating Section */
+.feedback-rating {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Display Average Rating */
+.average-rating {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Display Most Frequent Comment */
+.most-frequent-comment {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Empty Feedback Message */
+.feedback-list p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #888;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+/* Error State */
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
+
+/* Styling for DeleteFeedback component */
+.delete-feedback-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.delete-feedback-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  background-color: lightcoral;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.delete-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.delete-input-container input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.delete-input-container button {
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.delete-input-container button:hover {
+  background-color: #ff2d00;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+}

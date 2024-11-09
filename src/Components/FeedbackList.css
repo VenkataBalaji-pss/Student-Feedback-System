@@ -1,0 +1,74 @@
+/* Feedback List Container */
+.feedback-list-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #eaf2f8; /* Light background color for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Style */
+  .feedback-list-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Feedback List Styling */
+  .feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Feedback Item Styling */
+  .feedback-item {
+    background-color: #ffffff; /* White background for each feedback item */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header of Each Feedback Item */
+  .feedback-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* Details of Each Feedback Item */
+  .feedback-details {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .feedback-details strong {
+    color: #333;
+  }
+  
+  /* Empty Feedback Message */
+  .feedback-list p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #888;
+  }
+  
+  /* Loading State */
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  /* Error State */
+  .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+  }
+  

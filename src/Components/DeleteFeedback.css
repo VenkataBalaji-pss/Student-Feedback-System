@@ -1,0 +1,68 @@
+/* src/Components/DeleteFeedback.css */
+.delete-feedback-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.delete-feedback-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.delete-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.delete-input-container input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.delete-input-container button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.delete-input-container button:hover {
+    background-color: #ff2d00;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}

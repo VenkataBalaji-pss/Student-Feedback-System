@@ -1,0 +1,64 @@
+/* Styling for the courses list container */
+.courses-list-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header style for courses */
+  .courses-list-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each course item */
+  .courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .course-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .course-details {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .courses-list p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #888;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+  }
+  
